@@ -1,0 +1,15 @@
+#To Build An Image
+docker build --label "image" -t image .
+
+#Run Docker Service
+docker compose up -d --force-recreate
+
+#Clean unwanted images
+docker image prune -a -f
+docker builder prune -f
+
+#To follow logs
+docker logs --follow <containerId or containerName>
+
+#last 500 lines of log
+docker logs --tail 500 <containerId or containerName>
