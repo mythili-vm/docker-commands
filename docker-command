@@ -16,3 +16,6 @@ docker logs --tail 500 <containerId or containerName>
 
 #List docker service
 docker network ls
+
+#Remove unused networks
+docker network prune -f
