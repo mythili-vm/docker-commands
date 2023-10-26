@@ -19,3 +19,6 @@ docker network ls
 
 #Remove unused networks
 docker network prune -f
+
+#list docker services running on a specific network
+docker network ls
