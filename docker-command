@@ -13,3 +13,6 @@ docker logs --follow <containerId or containerName>
 
 #last 500 lines of log
 docker logs --tail 500 <containerId or containerName>
+
+#List docker service
+docker network ls
