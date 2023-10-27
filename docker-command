@@ -22,3 +22,6 @@ docker network prune -f
 
 #list docker services running on a specific network
 docker network ls
+
+#get ip of docker network
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId>
